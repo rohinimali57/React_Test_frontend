@@ -1,0 +1,40 @@
+.loginForm
+{
+    width:100%;
+    border: 1px solid #e1e1e1;
+    border-radius: 7px;
+    background: #FFF; 
+    width: 320px;
+    margin: 0 auto;
+}
+.shadow-lg 
+{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+.loginForm .LoginButton 
+{
+    background-color: #303974;
+    border-radius: 2px;
+    color: #FFF;
+    text-align: center;
+    border: 1px solid #303974;
+    font-family: 'lato-medium';
+}
+.loginBg
+{
+    background-image: url('../images/login-bg.jpg');
+    background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+.glowing-border {
+
+border-radius: 7px;
+box-shadow: 0 0 2px grey;
+}
+
+.glowing-border:focus { 
+outline: none;
+border-color: #9ecaed;
+box-shadow: 0 0 10px grey;
+}
