@@ -25,19 +25,12 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v2
-
-      # Runs a single command using the runners shell
-      - name: Npm Install Packages
-        run: npm install
-        
-      - name: Test & Code Coverage
-        run: npm app -- --coverage
-        
-      - name: Upload Code Coverage
-        uses: codecov/codecov-action@v1
-        with:
+      - uses: actions/checkout@v3
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+                
+     
+       with:
           token: ${{ secrets.CODECOV_TOKEN }}
           
       - name: Build Package
