@@ -1,7 +1,7 @@
 
 import './App.css';
 
-import Country from './Master/country'
+import Country from './Master/country';
 function App() {
   return (
     <div className="App">
