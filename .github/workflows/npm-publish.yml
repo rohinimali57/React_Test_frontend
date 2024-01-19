@@ -28,12 +28,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      - name: Setup Node.js and npm
-        uses: actions/setup-node@v4
-        with:
-          node-version: '10'  # You can specify the Node.js version you need
-          registry-url: 'https://registry.npmjs.org/'
-
       # Runs a single command using the runners shell
       - name: Npm Install Packages
         run: npm install
